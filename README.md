@@ -1,3 +1,5 @@
+![yamdb workflow](https://github.com/mishastik78/yamdb_final/actions/workflows/yamdb_workflow.yml/badge.svg)
+
 # Учебный проект
 
 Данный проект предназначен для взаимодействия c Django через API с использованием виртуализации средств разработки Docker
