@@ -1,6 +1,6 @@
 name: yamdb workflow
 
-on: [push]
+#on: [push]
 
 jobs:
   tests:
@@ -57,7 +57,7 @@ jobs:
           key: ${{ secrets.SSH_KEY }}
           passphrase: ${{ secrets.PASSPHRASE }}
           script:
-            sudo cd /var/dev/yamdb && docker-compose down && docker-compose build --pull && docker-compose up -d
+            cd /var/dev/yamdb_final && docker-compose down && docker-compose build --pull && docker-compose up -d
   
   send_message:
     runs-on: ubuntu-latest
