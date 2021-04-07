@@ -21,14 +21,14 @@ Docker-compose
 docker-compose up
 ```
 
-После завершения установки приложение доступно на порту 8000
+После завершения установки приложение доступно на порту 80
 
 Для создания суперпользователя используйте команду
 
 ```
 python manage.py createsuperuser
 ```
-в коммандной строке контейнера web.
+в коммандной строке контейнера web (docker-composer exec web bash).
 
 Для загрузки тестовых данных введите в коммандной строке контейнера web
 
@@ -46,3 +46,7 @@ See also the list of [contributors](https://github.com/your/project/contributors
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+
+## Развернутый проект
+
+Проект развернут по адресу [http://foenart.gq](http://foenart.gq)
